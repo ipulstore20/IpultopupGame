@@ -1,0 +1,12 @@
+
+services:
+  - type: web
+    name: IpulTopupGames
+    env: node
+    repo: https://github.com/ipulstore20/IpultopupGames
+    branch: main
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: NODE_ENV
+        value: production
